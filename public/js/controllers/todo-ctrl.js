@@ -4,6 +4,7 @@ angular.module('MyTodos').controller('TodoController', function($scope, TodoServ
 	$scope.saveTodo = function(todo) {
 		TodoService.save(todo);
 	};
+	
 	$scope.createTodo = function() {
 		TodoService.add({
 			title: $scope.newTodo
